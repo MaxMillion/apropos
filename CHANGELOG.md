@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 (unreleased)
+
+Add "hidpi only" mode to default to 2x images, scaled appropriately.
+
 ## 0.1.3 (2014-10-16)
 
 Bug fix for compatiblity with Sass 3.3.

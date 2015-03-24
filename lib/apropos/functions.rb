@@ -4,6 +4,10 @@
 #
 # It also provides convenience functions used by the Sass functions.
 module Apropos
+  class << self
+    attr_accessor :hidpi_only
+  end
+
   module_function
 
   def image_set(path)
@@ -15,6 +19,7 @@ module Apropos
   end
 
   def add_dpi_image_variant(id, query, order=0)
+    Sass.logger.warn("DPI variants detected in hidpi-only mode!") if hidpi_only
     ExtensionParser.add_parser(id) do |match|
       MediaQuery.new(query, order)
     end

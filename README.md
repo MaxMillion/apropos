@@ -74,6 +74,10 @@ $apropos-hidpi-query: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192
 
 If you want to do more advanced configuration like adding variants for localization, you can [customize Apropos in Ruby](doc-src/customization.md).
 
+### Hidpi Only mode
+
+TODO: fill this in
+
 ## Why use Apropos?
 
 There are many tools and techniques for using responsive images. What makes Apropos different? A few key principles:
